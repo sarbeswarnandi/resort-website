@@ -28,7 +28,7 @@ const workSans = Work_Sans({
 
 export const metadata: Metadata = {
   title: "Aranye Resort & Restaurant",
-  description: "A luxury nature resort offering stays, events, and celebrations",
+  description: "A forest retreat shaped by silence",
 };
 
 export default function RootLayout({
