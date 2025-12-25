@@ -91,11 +91,11 @@ export default function Home() {
         <h2>Resort Facilities</h2>
 
         <div className="facilities-popular">
-          <div className="facility-chip">Outdoor swimming pool</div>
           <div className="facility-chip">Air-conditioned rooms</div>
           <div className="facility-chip">Non-smoking rooms</div>
           <div className="facility-chip">Restaurant and room service</div>
           <div className="facility-chip">Garden and outdoor seating</div>
+           <div className="facility-chip">Fishing Activities</div>
           <div className="facility-chip">Bonfire evenings</div>
         </div>
 
@@ -104,7 +104,7 @@ export default function Home() {
             <h3>Great for your stay</h3>
             <ul>
               <li>Air conditioning</li>
-              <li>Flat-screen TV</li>
+              <li>LED-screen TV</li>
               <li>Room service</li>
               <li>Daily housekeeping</li>
               <li>Laundry service (additional charge)</li>
@@ -144,8 +144,8 @@ export default function Home() {
 
             <h3>Media and Technology</h3>
             <ul>
-              <li>Flat-screen TV</li>
-              <li>No internet access available</li>
+              <li>TV</li>
+              <li>WiFi internet access available</li>
             </ul>
           </div>
 
@@ -161,14 +161,14 @@ export default function Home() {
             <ul>
               <li>CCTV in common areas</li>
               <li>24-hour security</li>
-              <li>Safety deposit box</li>
+              {/* <li>Safety deposit box</li> */}
             </ul>
 
             <h3>Wellness</h3>
             <ul>
               <li>Outdoor swimming pool (open all year)</li>
               <li>Sun umbrellas</li>
-              <li>Sun loungers</li>
+              {/* <li>Sun loungers</li> */}
             </ul>
 
             <h3>Languages Spoken</h3>

@@ -22,12 +22,12 @@ export default function Navbar() {
       {/* Logo */}
       <strong
         style={{
-          color: "#c6a75e",
-          letterSpacing: "1.2px",
-          fontSize: "0.95rem",
+          color: "#367f30ff",
+          letterSpacing: "1px",
+          fontSize: "1.5rem",
         }}
       >
-        AURORA RESORT
+        Aranye Resort & Restaurant
       </strong>
 
       {/* Navigation */}
