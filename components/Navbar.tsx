@@ -18,9 +18,10 @@ export default function Navbar() {
         <nav className="nav-links desktop">
           <Link href="/">Home</Link>
           <Link href="/rooms">Rooms</Link>
-          <Link href="/contact">Locate Us</Link>
+          <Link href="/locate-us">Locate Us</Link>
+          <Link href="/contact">Contact</Link>
           <a href="tel:+918972657055" className="nav-cta">
-            Book
+            Book Now
           </a>
         </nav>
 

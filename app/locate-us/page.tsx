@@ -4,7 +4,7 @@ export default function LocateUs() {
       {/* Heading */}
       <h1
         style={{
-          color: "#c6a75e",
+          color: "#519e40ff",
           marginBottom: "0.8rem",
           fontSize: "2.4rem",
         }}
@@ -68,7 +68,7 @@ export default function LocateUs() {
           style={{
             display: "inline-block",
             padding: "12px 34px",
-            background: "#c6a75e",
+            background: "#63b05cff",
             color: "#ffffff",
             borderRadius: "999px",
             fontWeight: 600,
