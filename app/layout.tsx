@@ -46,21 +46,21 @@ export default function RootLayout({
         {children}
         <Footer />
 
-        {/* GA4 (enable later when ready) */}
-        {/*
+        {/* Google Analytics 4 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-135KSH9TYL"
           strategy="afterInteractive"
         />
-        <Script strategy="afterInteractive">
+        <Script id="ga4-init" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-XXXXXXXXXX');
+            gtag('config', 'G-135KSH9TYL', {
+              page_path: window.location.pathname,
+            });
           `}
         </Script>
-        */}
       </body>
     </html>
   );
