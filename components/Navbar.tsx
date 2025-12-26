@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="/">Home</Link>
           <Link href="/rooms">Rooms</Link>
           <Link href="/locate-us">Locate Us</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contact">Contact Us</Link>
           <a href="tel:+918972657055" className="nav-cta">
             Book Now
           </a>
@@ -42,7 +42,8 @@ export default function Navbar() {
         <div className="mobile-menu">
           <Link href="/" onClick={() => setOpen(false)}>Home</Link>
           <Link href="/rooms" onClick={() => setOpen(false)}>Rooms</Link>
-          <Link href="/contact" onClick={() => setOpen(false)}>Locate Us</Link>
+          <Link href="/locate-us" onClick={() => setOpen(false)}>Locate Us</Link>
+          <Link href="/contact" onClick={() => setOpen(false)}>Contact Us</Link>
           <a href="tel:+918972657055" className="mobile-book">
             Call to Book
           </a>
