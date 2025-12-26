@@ -20,9 +20,9 @@ export default function Navbar() {
           <Link href="/rooms">Rooms</Link>
           <Link href="/locate-us">Locate Us</Link>
           <Link href="/contact">Contact Us</Link>
-          <a href="tel:+918972657055" className="nav-cta">
+          {/* <a href="tel:+918972657055" className="nav-cta">
             Book Now
-          </a>
+          </a> */}
         </nav>
 
         {/* Mobile Toggle */}
