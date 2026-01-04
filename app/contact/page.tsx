@@ -26,6 +26,7 @@ export default function Contact() {
 
             <a
               href="https://api.whatsapp.com/send?phone=%2B8972657055"
+              // href="https://wa.me/qr/ZNAJTSQFYEXAJ1"
               target="_blank"
               className="contact-button secondary"
             >

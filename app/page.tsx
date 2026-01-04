@@ -35,17 +35,38 @@ export default function Home() {
         <div className="hero-inner">
           {/* TEXT */}
           <div className="hero-text">
+            <p className="hero-eyebrow">Forest retreat in Bankura</p>
             <h1>
               A forest retreat
               <br />
               shaped by silence
             </h1>
 
-            <p>
+            <p className="hero-subtitle">
               Aranye Resort &amp; Restaurant is located deep within a forest
-              landscape, far from city noise and crowds. It is a place where
-              greenery surrounds every moment and time moves gently.
+              landscape, away from city noise and crowds. A calm stay with
+              open spaces, local food, and simple, quiet experiences.
             </p>
+
+            <div className="hero-ctas">
+              <a href="tel:+918972657055" className="hero-cta primary">
+                Call to book
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=%2B8972657055"
+                className="hero-cta secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp us
+              </a>
+            </div>
+
+            <div className="hero-highlights">
+              <span>✓ Direct booking with the resort</span>
+              <span>✓ Nature-facing rooms</span>
+              <span>✓ Space for families &amp; groups</span>
+            </div>
           </div>
 
           {/* SLIDESHOW */}
@@ -54,18 +75,9 @@ export default function Home() {
               src="https://images.picxy.com/cache/2020/9/24/c71d91e2e36edf8e85bfb49caecd371e.jpg"
               alt="Forest surroundings"
             />
-            <img
-              src="/images/room1.jpg"
-              alt="Green landscape"
-            />
-            <img
-              src="/images/green_forest.jpg"
-              alt="Quiet retreat"
-            />
-            <img
-              src="/images/cloudy_nature.jpg"
-              alt="Resort surroundings"
-            />
+            <img src="/images/room1.jpg" alt="Green landscape" />
+            <img src="/images/green_forest.jpg" alt="Quiet retreat" />
+            <img src="/images/cloudy_nature.jpg" alt="Resort surroundings" />
           </div>
         </div>
       </section>
@@ -81,6 +93,20 @@ export default function Home() {
           surroundings, and calm experiences. Mornings begin with natural
           sounds, afternoons pass slowly, and evenings settle into stillness.
         </p>
+      </section>
+
+      {/* WHO IT'S FOR */}
+      <section className="section intro-section intro-audience">
+        <h2 className="section-heading">Made for quiet stays</h2>
+        <p className="section-text">
+          Aranye works well for family trips, small celebrations, corporate
+          offsites, and anyone looking to slow down in a forest setting.
+        </p>
+        <div className="audience-tags">
+          <span>Families &amp; friends</span>
+          <span>Corporate retreats</span>
+          <span>Small weddings</span>
+        </div>
       </section>
 
       {/* ACTIVITIES */}
@@ -119,6 +145,10 @@ export default function Home() {
       {/* FACILITIES */}
       <section className="facilities">
         <h2>Resort Facilities</h2>
+        <p className="facilities-intro">
+          Simple, comfortable facilities that support quiet stays, group
+          gatherings, and time outdoors.
+        </p>
 
         <div className="facilities-popular">
           <div className="facility-chip">Air-conditioned rooms</div>
