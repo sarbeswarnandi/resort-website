@@ -1,3 +1,4 @@
+// app/layout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 import Script from "next/script";
@@ -28,7 +29,15 @@ const workSans = Work_Sans({
 
 export const metadata: Metadata = {
   title: "Aranye Resort & Restaurant",
-  description: "A forest retreat shaped by silence",
+  description: "A forest retreat shaped by silence in Bankura, West Bengal.",
+  metadataBase: new URL("https://aranyeresort.vercel.app"), // change to your real domain
+  openGraph: {
+    title: "Aranye Resort & Restaurant",
+    description: "A calm forest retreat with comfortable rooms, local food, and nature experiences.",
+    url: "https://aranyeresort.vercel.app",
+    siteName: "Aranye Resort & Restaurant",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -43,7 +52,10 @@ export default function RootLayout({
     >
       <body>
         <Navbar />
-        {children}
+
+        {/* Main landmark for accessibility */}
+        <main>{children}</main>
+
         <Footer />
 
         {/* Google Analytics 4 */}
