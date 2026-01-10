@@ -7,7 +7,7 @@ type RoomCardProps = {
   title: string;
   price: string;
   description: string;
-  images: [string, string];
+  images: string[]; // allow any-length array of image URLs
 };
 
 export default function RoomCard({
@@ -35,7 +35,8 @@ export default function RoomCard({
               <span>{price}</span>
             ) : (
               <>
-                ₹{price} <span className="room-card-price-night">/ night</span>
+                ₹{price}{" "}
+                <span className="room-card-price-night">/ night</span>
               </>
             )}
           </p>

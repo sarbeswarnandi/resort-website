@@ -1,4 +1,7 @@
 // app/page.tsx
+import Link from "next/link";
+import RoomCard from "../components/RoomCard";
+import { roomsData } from "./rooms/roomsData";
 
 function Activity({
   title,
@@ -106,6 +109,46 @@ export default function Home() {
           <span>Families &amp; friends</span>
           <span>Corporate retreats</span>
           <span>Small weddings</span>
+        </div>
+      </section>
+
+      {/* ROOMS LINK + PREVIEW (connects to /rooms and reuses roomsData) */}
+      <section className="section rooms-highlight">
+        <div className="rooms-highlight-inner">
+          <h2 className="section-heading">Rooms &amp; pricing</h2>
+          <p className="section-text">
+            View accommodation options, photos, and pricing for solo travelers,
+            families, and group stays.
+          </p>
+
+          {/* Small preview of first 3 rooms from roomsData */}
+          <div className="rooms-preview-grid">
+            {roomsData.slice(0, 3).map((room) => (
+              <div key={room.key} className="rooms-preview-card">
+                <RoomCard
+                  title={room.title}
+                  price={room.price}
+                  description={room.description}
+                  images={room.images}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="rooms-highlight-actions">
+            <Link href="/rooms" className="hero-cta primary">
+              View all rooms
+            </Link>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=%2B8972657055"
+              className="hero-cta secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ask about availability
+            </a>
+          </div>
         </div>
       </section>
 

@@ -19,6 +19,7 @@
   --navbar-height: 72px;
 }
 
+
 /* ================= RESET ================= */
 
 * {
@@ -26,6 +27,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 /* ================= ROOT & BODY ================= */
 
@@ -41,6 +43,7 @@ body {
   -webkit-font-smoothing: antialiased;
   padding-top: var(--navbar-height);
 }
+
 
 /* ================= TYPOGRAPHY ================= */
 
@@ -75,6 +78,7 @@ a.button {
   font-weight: 500;
   display: inline-block;
 }
+
 
 /* ================= HERO ================= */
 
@@ -179,6 +183,7 @@ a.button {
   padding: 6px 14px;
 }
 
+
 /* ================= HERO SLIDESHOW ================= */
 
 .hero-slideshow {
@@ -227,6 +232,7 @@ a.button {
   }
 }
 
+
 /* ================= SECTIONS ================= */
 
 .section {
@@ -271,6 +277,7 @@ a.button {
   font-weight: 500;
 }
 
+
 /* ================= ACTIVITY LAYOUT ================= */
 
 .activity-section {
@@ -304,6 +311,7 @@ a.button {
 .activity-content p {
   margin-bottom: 2rem;
 }
+
 
 /* ================= RESPONSIVE (HERO + ACTIVITIES) ================= */
 
@@ -344,8 +352,10 @@ a.button {
 
   .activity-image img {
     height: 300px;
+    border-radius: 20px;
   }
 }
+
 
 /* ================= ROOM CARDS ================= */
 
@@ -381,7 +391,7 @@ a.button {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 8px;
   display: block;
 }
 
@@ -395,6 +405,7 @@ a.button {
     grid-template-columns: 1fr;
   }
 }
+
 
 /* =========================
    FACILITIES SECTION
@@ -489,6 +500,7 @@ a.button {
     gap: 0.5rem;
   }
 }
+
 
 /* =========================
    CONTACT PAGE
@@ -606,6 +618,7 @@ a.button {
   }
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -717,6 +730,7 @@ a.button {
   display: block;
 }
 
+
 /* =========================
    NAVBAR
 ========================= */
@@ -787,9 +801,9 @@ a.button {
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  padding: 1.5rem 6%;
-  background: white;
+  gap: 1.2rem;
+  padding: 1.2rem 6%;
+  background: #e3f1e8;
   border-top: 1px solid var(--border-soft);
 }
 
@@ -818,10 +832,12 @@ a.button {
   }
 }
 
+
 /* PAGE OFFSET FIX */
 body {
   padding-top: 80px;
 }
+
 
 /* Rooms list */
 .rooms-list {
@@ -829,6 +845,7 @@ body {
   flex-direction: column;
   gap: 2rem;
 }
+
 
 /* Horizontal room card like the design */
 .room-card-horizontal {
@@ -851,7 +868,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 260px;
-  max-height:320px;
+  max-height: 320px;
   object-fit: cover;
   display: block;
 }
@@ -971,4 +988,91 @@ body {
 .room-thumb-btn.active img {
   outline: 2px solid var(--green-primary);
   outline-offset: 2px;
+}
+
+
+/* =========================
+   ROOMS HIGHLIGHT ON HOME
+========================= */
+
+.section.rooms-highlight {
+  /* reduce the default big top padding so there isn't a huge white band */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.rooms-highlight {
+  /* background: #abccb1; */
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(242, 247, 243, 0.95)
+    );
+  
+
+  border-radius: 2px;
+  margin-top: 1.5rem;
+}
+
+.rooms-highlight-inner {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.rooms-highlight-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .rooms-highlight-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+/* Rooms preview grid on home page */
+
+.rooms-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Make preview cards compact vertical tiles */
+.rooms-preview-card .room-card-horizontal {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 12px 28px rgba(15, 61, 46, 0.06);
+}
+
+.rooms-preview-card .room-card-horizontal-image img {
+  min-height: 80px;
+  max-height: 180px;
+}
+
+.rooms-preview-card .room-card-horizontal-content {
+  gap: 0.9rem;
+}
+
+.rooms-preview-card .room-card-thumbs {
+  justify-content: flex-start;
+}
+
+/* Smaller buttons in preview */
+.rooms-preview-card .room-card-btn {
+  padding: 4px 18px;
+  font-size: 0.85rem;
+}
+
+/* Stack preview cards on mobile */
+@media (max-width: 900px) {
+  .rooms-preview-grid {
+    grid-template-columns: 1fr;
+  }
 }
